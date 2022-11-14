@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="548dp"
+            android:stretchColumns="0,1,2">
+
+            <TableRow>
+
+                <TextView android:text="Cell 1" />
+
+                <TextView android:text="Cell 2" />
+
+                <TextView android:text="Cell 3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="Cell 1" />
+
+                <TextView android:text="Cell 2" />
+
+                <TextView android:text="Cell 3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_span="2"
+                    android:text="double width cell 1" />
+
+                <TextView android:text="cell" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="249dp"
+            android:layout_height="193dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="75dp"
+            app:srcCompat="@drawable/photo_1538370965046_79c0d6907d47" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SHARE"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>
