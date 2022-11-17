@@ -6,13 +6,17 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="74dp"
+            android:layout_width="270dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="548dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="161dp"
             android:stretchColumns="0,1,2">
 
             <TableRow>
@@ -43,29 +47,47 @@
             </TableRow>
         </TableLayout>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView"
             android:layout_width="249dp"
             android:layout_height="193dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="95dp"
+            android:layout_marginStart="83dp"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="50dp"
-            android:layout_marginEnd="65dp"
-            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="443dp"
             app:srcCompat="@drawable/photo_1538370965046_79c0d6907d47" />
-    </RelativeLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="SHARE"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="3dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:maxHeight="42dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/orange_sticker_arrow_2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="111dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="308dp"
+            android:text="SHARE"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
 
 </FrameLayout>
