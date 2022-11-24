@@ -19,7 +19,7 @@ public class TableLayout extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TableLayout.this,  CualquierLayout.class);
+                Intent intent = new Intent(TableLayout.this,  ButtonsExtended.class);
                 startActivity(intent);
             }
         });
